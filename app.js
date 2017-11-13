@@ -13,7 +13,8 @@ height = window.innerHeight;
 
 
 var camera = new THREE.PerspectiveCamera(45, width / height, 0.01, 1000);
-camera.position.z = 1.5;
+camera.rotation.set(0.3432142160961214, -0.6802072624449855, 0)
+camera.position.set(-18.48166841328442, -7.687684632094362, 21.51259108437748)
 
 
 
@@ -107,7 +108,7 @@ mtlLoader.load( 'Satellite.mtl', function( materials ) {
     
     });
 
-scene.add(new THREE.AmbientLight(0x333333,0.2));
+//scene.add(new THREE.AmbientLight(0x333333,0.2));
 
 
 /*
@@ -148,7 +149,6 @@ var render = function () {
   moon_orbit.rotation.set(0, 0, m_angle);
 
   earth.rotation.set(0,time*0.001,0.4101524);
-    console.log(time%60);
   if (time%120==60){
     light1.intensity = 0;
     sprite.material.color.set(0,0,0);
