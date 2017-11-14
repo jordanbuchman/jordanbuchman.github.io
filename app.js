@@ -97,6 +97,7 @@ mtlLoader.load( 'Satellite.mtl', function( materials ) {
             moon_orbit.add(satellite);
             satellite.position.set(0, 10, 0);
             light1 = new THREE.PointLight( 0xff0040, 1, 50 );
+            light1.intensity = 0.1;
             satellite.add(light1);
             light1.position.set(0,5.3,14.3)
             
