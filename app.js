@@ -14,7 +14,7 @@ height = window.innerHeight;
 
 var camera = new THREE.PerspectiveCamera(45, width / height, 0.01, 1000);
 camera.rotation.set(0.3432142160961214, -0.6802072624449855, 0)
-camera.position.set(-18.48166841328442, -7.687684632094362, 21.51259108437748)
+camera.position.set(-26.46524611625967, -11.008555142474158, 30.805444882739646)
 
 
 
@@ -131,7 +131,7 @@ mtlLoader.load( 'Satellite.mtl', function( materials ) {
  scene.add(spacesphere);
  */
 
-controls = new THREE.OrbitControls( camera, renderer.domElement );
+//controls = new THREE.OrbitControls( camera, renderer.domElement );
 
 
 
