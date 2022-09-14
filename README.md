@@ -1,1 +1,0 @@
-# jordanbuchman.github.io
